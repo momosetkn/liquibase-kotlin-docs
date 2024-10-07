@@ -26,11 +26,7 @@ dependencies {
     // liquibase
     implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
     // liquibase-kotlin
-    val liquibaseKotlinVersion = "%liquibaseKotlinVersion%"
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-dsl:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-compiled-parser:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-compiled-serializer:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-client:$liquibaseKotlinVersion")
+    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-starter-compiled:%liquibaseKotlinVersion%")
 }
 ```
 
@@ -48,11 +44,7 @@ dependencies {
     // liquibase
     implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
     // liquibase-kotlin
-    val liquibaseKotlinVersion = "%liquibaseKotlinVersion%"
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-dsl:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-script-parser:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-script-serializer:$liquibaseKotlinVersion")
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-client:$liquibaseKotlinVersion")
+    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-starter-script:%liquibaseKotlinVersion%")
 }
 ```
 </tab>

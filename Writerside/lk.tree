@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="lk"
-                 name="Liquibase kotlin"
+                 name="Liquibase kotlin(DSL, Wrapper client, ORM integration)"
                  start-page="get-started.md">
 
     <toc-element topic="get-started.md"/>

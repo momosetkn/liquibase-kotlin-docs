@@ -1,6 +1,6 @@
 # Get started
 
-[Liquibase-kotlin](https://momosetkn.github.io/liquibase-kotlin) was created with the aim of integrating [liquibase](https://github.com/liquibase/liquibase) with kotlin.
+[Liquibase-kotlin](https://github.com/momosetkn/liquibase-kotlin) was created with the aim of integrating [liquibase](https://github.com/liquibase/liquibase) with kotlin.
 By using Kotlin for migration, unification is achieved.
 This explains how-to migration by liquibase with Kotlin-DSL here.
 <note>

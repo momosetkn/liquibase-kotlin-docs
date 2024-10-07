@@ -104,6 +104,8 @@ and add any changeSet.
 
 ```kotlin
 // src/main/kotlin/example/DatabaseChangelog20241007Employee1.kt
+package example
+
 import momosetkn.liquibase.kotlin.parser.KotlinCompiledDatabaseChangeLog
 
 class DatabaseChangelog20241007Employee1 : KotlinCompiledDatabaseChangeLog({

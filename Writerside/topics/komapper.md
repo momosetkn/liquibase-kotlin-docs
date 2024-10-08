@@ -13,8 +13,7 @@ repositories {
 
 dependencies {
     // liquibase-kotlin
-    val liquibaseKotlinVersion = "%liquibaseKotlinVersion%"
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-custom-komapper-jdbc-change:$liquibaseKotlinVersion")
+    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-custom-komapper-jdbc-change:%liquibaseKotlinVersion%")
 }
 ```
 

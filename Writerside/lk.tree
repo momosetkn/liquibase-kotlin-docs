@@ -4,8 +4,9 @@
 
 <instance-profile id="lk"
                  name="Liquibase kotlin(DSL, Wrapper client, ORM integration)"
-                 start-page="get-started.md">
+                 start-page="home.md">
 
+    <toc-element topic="home.md"/>
     <toc-element topic="get-started.md"/>
     <toc-element topic="orm-integration.md">
         <toc-element topic="komapper.md"/>

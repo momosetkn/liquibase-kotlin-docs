@@ -1,12 +1,6 @@
 # Get started
 
-[Liquibase-kotlin](https://github.com/momosetkn/liquibase-kotlin) was created with the aim of integrating [liquibase](https://github.com/liquibase/liquibase) with kotlin.
-By using Kotlin for migration, unification is achieved.
 This explains how-to migration by liquibase with Kotlin-DSL here.
-<note>
-You can choose DSL by Compiled Kotlin or kotlin-script.
-I recommend Compiled Kotlin.
-</note>
 
 ## Let's install
 

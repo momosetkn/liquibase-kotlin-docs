@@ -13,7 +13,7 @@ Update your build.gradle.kts.
 repositories {
     mavenCentral()
     // Add below to repositories. because liquibase-kotlin is publish to jitpack.
-    maven { url = URI("https://jitpack.io") }
+    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {

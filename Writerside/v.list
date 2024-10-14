@@ -2,5 +2,5 @@
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
     <var name="liquibaseVersion" value="4.29.2"/>
-    <var name="liquibaseKotlinVersion" value="0.7.1"/>
+    <var name="liquibaseKotlinVersion" value="4.29.2-0.8.0"/>
 </vars>

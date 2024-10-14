@@ -10,17 +10,11 @@ Update your build.gradle.kts.
 <tab title="Compiled Kotlin">
 
 ```kotlin
-repositories {
-    mavenCentral()
-    // Add below to repositories. because liquibase-kotlin is publish to jitpack.
-    maven { url = uri("https://jitpack.io") }
-}
-
 dependencies {
     // liquibase
     implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
     // liquibase-kotlin
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-starter-compiled:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-starter-compiled:%liquibaseKotlinVersion%")
 }
 ```
 
@@ -28,17 +22,11 @@ dependencies {
 <tab title="Kotlin script">
 
 ```kotlin
-repositories {
-    mavenCentral()
-    // Add below to repositories. because liquibase-kotlin is publish to jitpack.
-    maven { url = URI("https://jitpack.io") }
-}
-
 dependencies {
     // liquibase
     implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
     // liquibase-kotlin
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-starter-script:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-starter-script:%liquibaseKotlinVersion%")
 }
 ```
 </tab>

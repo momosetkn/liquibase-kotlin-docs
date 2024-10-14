@@ -6,14 +6,9 @@
 Add bellow code your build.gradle.kts
 
 ```kotlin
-repositories {
-    // Add below to repositories. because liquibase-kotlin is publish to jitpack.
-    maven { url = URI("https://jitpack.io") }
-}
-
 dependencies {
     // liquibase-kotlin
-    implementation("com.github.momosetkn.liquibase-kotlin:liquibase-kotlin-custom-exposed-migration-change:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-custom-exposed-migration-change:%liquibaseKotlinVersion%")
 }
 ```
 

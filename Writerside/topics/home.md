@@ -9,7 +9,7 @@ I would like to recommend writing DSL in compiled Kotlin to take advantage of th
 
 ## Latest release
 
-[![Maven Central](https://img.shields.io/maven-central/v/momosetkn/liquibase-kotlin-dsl)](https://search.maven.org/artifact/momosetkn/liquibase-kotlin-dsl)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.momosetkn/liquibase-kotlin-dsl)](https://search.maven.org/artifact/io.github.momosetkn/liquibase-kotlin-dsl)
 
 ## Support status Liquibase version
 

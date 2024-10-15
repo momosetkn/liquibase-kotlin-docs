@@ -13,5 +13,7 @@
     <toc-element topic="orm-integration.md">
         <toc-element topic="komapper.md"/>
         <toc-element topic="exposed.md"/>
+        <toc-element topic="jooq.md"/>
+        <toc-element topic="ktorm.md"/>
     </toc-element>
 </instance-profile>

@@ -1,7 +1,7 @@
 # Komapper-jdbc
 
 
-## How to install
+## Install
 
 Add bellow code your build.gradle.kts
 
@@ -15,7 +15,7 @@ dependencies {
 ## Use customKomapperJdbcChange
 
 execute is required, rollback is optional.
-callback argument type is `org.komapper.jdbc.JdbcDatabase`.
+the callback argument type is `org.komapper.jdbc.JdbcDatabase`.
 
 <tabs>
 <tab title="Compiled Kotlin">

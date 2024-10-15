@@ -1,7 +1,7 @@
 # Exposed-migration
 
 
-## How to install
+## Install
 
 Add bellow code your build.gradle.kts
 
@@ -15,7 +15,7 @@ dependencies {
 ## Use customExposedMigrationChange
 
 execute is required, rollback is optional.
-callback argument type is `org.jetbrains.exposed.sql.Database`.
+the callback argument type is `org.jetbrains.exposed.sql.Database`.
 
 <tabs>
 <tab title="Compiled Kotlin">

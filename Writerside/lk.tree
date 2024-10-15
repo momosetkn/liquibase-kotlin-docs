@@ -17,4 +17,5 @@
         <toc-element topic="ktorm.md"/>
     </toc-element>
     <toc-element topic="script-parser-extention.md"/>
+    <toc-element topic="custom-task-change-with-datasource.md"/>
 </instance-profile>

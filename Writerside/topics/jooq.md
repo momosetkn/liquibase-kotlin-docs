@@ -73,3 +73,23 @@ databaseChangeLog {
 
 </tab>
 </tabs>
+
+## Configure org.jooq.DSLContext
+
+<note>
+Since a default implementation is provided, there is no need to customize it if it is not necessary.
+</note>
+
+override the `momosetkn.liquibase.kotlin.change.custom.jooq.LiquibaseJooqConfig.provideDSLContext`
+
+example code
+
+```kotlin
+fun provideDSLContext(
+    javaxSqlDataSource: javax.sql.DataSource,
+    liquibaseDatabaseShortName: String
+): org.jooq.DSLContext {
+    return DefaultDSLContext(javaxSqlDataSource, getDialect(liquibaseDatabaseShortName))
+}
+momosetkn.liquibase.kotlin.change.custom.jooq.LiquibaseJooqConfig.provideDSLContext = ::provideDSLContext
+```

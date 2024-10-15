@@ -79,3 +79,42 @@ databaseChangeLog {
 
 </tab>
 </tabs>
+
+## Configure org.ktorm.database.Database
+
+<note>
+Since a default implementation is provided, there is no need to customize it if it is not necessary.
+</note>
+
+override the `momosetkn.liquibase.kotlin.change.custom.ktorm.LiquibaseKtormConfig.provideDatabase`
+
+example code
+
+```kotlin
+private val dialectMap = run {
+    val loader = ServiceLoader.load(SqlDialect::class.java)
+    loader
+        .associateBy {
+            val className = it::class.simpleName
+            checkNotNull(className)
+                .removeSuffix("Dialect").lowercase()
+        }
+}
+
+fun provideDatabase(
+    javaxSqlDataSource: javax.sql.DataSource,
+    liquibaseDatabaseShortName: String
+): Database {
+    val dialect = getDialect(liquibaseDatabaseShortName)
+    val database = Database.connect(
+        javaxSqlDataSource,
+        dialect
+    )
+    return database
+}
+
+internal fun getDialect(liquibaseDatabaseShortName: String): SqlDialect {
+    return dialectMap[liquibaseDatabaseShortName] ?: StandardSqlDialect
+}
+momosetkn.liquibase.kotlin.change.custom.ktorm.LiquibaseKtormConfig.provideDatabase = ::provideDatabase
+```

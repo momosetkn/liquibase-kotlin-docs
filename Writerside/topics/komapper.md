@@ -84,3 +84,40 @@ databaseChangeLog {
 
 </tab>
 </tabs>
+
+## Configure org.komapper.jdbc.JdbcDatabase
+
+<note>
+Since a default implementation is provided, there is no need to customize it if it is not necessary.
+</note>
+
+override the `momosetkn.liquibase.kotlin.change.custom.komapper.LiquibaseKomapperJdbcConfig.provideJdbcDatabase`
+
+example code
+
+```kotlin
+fun provideJdbcDatabase(
+    javaxSqlDataSource: javax.sql.DataSource,
+    liquibaseDatabaseShortName: String
+): JdbcDatabase {
+    return JdbcDatabase(javaxSqlDataSource, getJdbcDialect(liquibaseDatabaseShortName))
+}
+
+private fun getJdbcDialect(liquibaseDatabaseShortName: String): JdbcDialect {
+    return runCatching {
+        JdbcDialects.get(liquibaseDatabaseShortName)
+    }.fold(
+        onSuccess = { it },
+        onFailure = {
+            val loader = ServiceLoader.load(JdbcDialectFactory::class.java)
+            val factory = loader.singleOrNull()
+            checkNotNull(factory) {
+                @Suppress("MaxLineLength")
+                "I could not find the `org.komapper.jdbc.JdbcDialects` that should be used. Please set the `${this::class.qualifiedName}.provideJdbcDatabase`."
+            }
+            factory.create()
+        }
+    )
+}
+momosetkn.liquibase.kotlin.change.custom.komapper.LiquibaseKomapperJdbcConfig.provideJdbcDatabase = ::provideJdbcDatabase
+```

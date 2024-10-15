@@ -89,3 +89,44 @@ databaseChangeLog {
 
 </tab>
 </tabs>
+
+## Configure org.jetbrains.exposed.sql.Database
+
+<note>
+Since a default implementation is provided, there is no need to customize it if it is not necessary.
+</note>
+
+override the `momosetkn.liquibase.kotlin.change.custom.exposed.LiquibaseExposedMigrationConfig.provideDatabase`
+
+example code
+
+```kotlin
+fun provideDatabase(
+    javaxSqlDataSource: javax.sql.DataSource,
+    liquibaseDatabaseShortName: String
+): Database {
+    val dialect = getDialect(liquibaseDatabaseShortName)
+    val db = Database.connect(
+        datasource = javaxSqlDataSource,
+        databaseConfig = dialect?.let {
+            DatabaseConfig { explicitDialect = dialect }
+        },
+    )
+    return db
+}
+
+internal fun getDialect(liquibaseDatabaseShortName: String): VendorDialect? {
+    return when (liquibaseDatabaseShortName) {
+        "h2" -> H2Dialect()
+        "mariadb" -> MariaDBDialect()
+        "mysql" -> MysqlDialect()
+        "oracle" -> OracleDialect()
+        "postgresql" -> PostgreSQLDialect()
+        "sqlserver" -> SQLServerDialect()
+        "sqlite" -> SQLiteDialect()
+        else -> null
+    }
+}
+momosetkn.liquibase.kotlin.change.custom.exposed.LiquibaseExposedMigrationConfig.provideDatabase = ::provideDatabase
+```
+k

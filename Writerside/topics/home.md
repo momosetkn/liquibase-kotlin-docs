@@ -1,5 +1,9 @@
 # Home
 
+<web-summary>
+Discover how Liquibase-kotlin integrates Liquibase migrations with Kotlin, leveraging Kotlin-DSL and ORM support for streamlined, error-free compiled Kotlin development.
+</web-summary>
+
 [Liquibase-kotlin](https://github.com/momosetkn/liquibase-kotlin) was created with the aim of
 integrating [liquibase](https://github.com/liquibase/liquibase) with kotlin.
 This product will perform migration using Kotlin to unify to the Kotlin language.
@@ -12,7 +16,7 @@ error.
 
 ## Latest release
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.momosetkn/liquibase-kotlin-dsl)](https://search.maven.org/artifact/io.github.momosetkn/liquibase-kotlin-dsl)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.momosetkn/liquibase-kotlin-starter-compiled)](https://search.maven.org/artifact/io.github.momosetkn/liquibase-kotlin-starter-compiled)
 
 ## Supported Liquibase version
 

@@ -16,4 +16,5 @@
         <toc-element topic="jooq.md"/>
         <toc-element topic="ktorm.md"/>
     </toc-element>
+    <toc-element topic="script-parser-extention.md"/>
 </instance-profile>

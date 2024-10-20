@@ -4,6 +4,6 @@
     <var name="liquibaseVersion" value="4.29.2"/>
     <var name="liquibaseReleasesPage" value="https://github.com/liquibase/liquibase/releases/tag"/>
 
-    <var name="liquibaseKotlinVersion" value="4.29.2-0.8.0"/>
+    <var name="liquibaseKotlinVersion" value="4.29.2-0.8.1"/>
     <var name="liquibaseKotlinReleasesPage" value="https://github.com/momosetkn/liquibase-kotlin/releases/tag"/>
 </vars>

@@ -18,4 +18,5 @@
     </toc-element>
     <toc-element topic="script-parser-extention.md"/>
     <toc-element topic="use-javasqldatasource.md"/>
+    <toc-element topic="detailed-configure.md"/>
 </instance-profile>

@@ -23,7 +23,8 @@ error.
 | Liquibase version                                                          | Supported liquibase-kotlin                                                                                                                                                                                                               |
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Latest SNAPSHOT](https://github.com/liquibase/liquibase/packages/1783578) | [![test snapshot-version Liquibase](https://github.com/momosetkn/liquibase-kotlin/actions/workflows/test-snapshot-liquibase.yml/badge.svg)](https://github.com/momosetkn/liquibase-kotlin/actions/workflows/test-snapshot-liquibase.yml) |
-| [4.29.2](%liquibaseReleasesPage%/v4.29.2)                                  | [4.29.2-0.8.1](%liquibaseKotlinReleasesPage%/4.29.2-0.8.1), [4.29.2-0.8.0](%liquibaseKotlinReleasesPage%/4.29.2-0.8.0)                                                                                                                   |
+| [4.30.0](%liquibaseReleasesPage%/v4.30.0)                                  | [4.30.0-0.9.0](%liquibaseKotlinReleasesPage%/4.30.0-0.9.0)                                                                                                            |
+| [4.29.2](%liquibaseReleasesPage%/v4.29.2)                                  | [4.29.2-0.8.1](%liquibaseKotlinReleasesPage%/4.30.0-0.9.0), [4.29.2-0.8.0](%liquibaseKotlinReleasesPage%/4.29.2-0.8.0)                                                                                                                   |
 
 ## Version older than Liquibase 4.29.2 version
 

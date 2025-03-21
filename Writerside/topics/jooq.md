@@ -1,4 +1,4 @@
-# Jooq
+# jOOQ
 
 
 ## Install

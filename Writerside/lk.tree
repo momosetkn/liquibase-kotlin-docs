@@ -10,6 +10,7 @@
     <toc-element topic="get-started.md"/>
     <toc-element topic="client.md"/>
     <toc-element topic="command-based-client.md"/>
+    <toc-element topic="extension.md"/>
     <toc-element topic="orm-integration.md">
         <toc-element topic="komapper.md"/>
         <toc-element topic="exposed.md"/>

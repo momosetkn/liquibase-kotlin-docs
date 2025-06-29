@@ -41,6 +41,16 @@ fun main() {
         changeLogFile = /* your changeLog file path here */,
         database = database,
     )
+    // example) use javax.sql.DataSource
+    val client = momosetkn.liquibase.client.LiquibaseClient(
+        changeLogFile = /* your changeLog file path here */,
+        datasource = hikariDataSource,
+    )
+    // example) use java.sql.Connection
+    val client = momosetkn.liquibase.client.LiquibaseClient(
+        changeLogFile = /* your changeLog file path here */,
+        connection = connection,
+    )
     // execute migrate
     client.update()
 }

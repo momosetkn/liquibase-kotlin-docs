@@ -35,7 +35,7 @@ fun main() {
         it.changeExecListener = SlowLogChangeExecListener()
         // or Setting option
         it.changeExecListener = SlowLogChangeExecListener(
-            thresholdMillis = 1.seconds, // optional
+            threshold = 1.seconds, // optional
             log = org.slf4j.LoggerFactory.getLogger("SlowLogChangeExecListener") // optional
         )
     }

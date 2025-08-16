@@ -10,7 +10,7 @@ If you use [liquibase-kotlin-starter-compiled](https://central.sonatype.com/arti
 
 ```kotlin
 dependencies {
-    implementation("io.github.momosetkn:liquibase-kotlin-client:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-client)
 }
 ```
 

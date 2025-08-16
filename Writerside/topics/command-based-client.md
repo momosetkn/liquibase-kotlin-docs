@@ -9,7 +9,7 @@ Update your build.gradle.kts.
 
 ```kotlin
 dependencies {
-    implementation("io.github.momosetkn:liquibase-kotlin-command-client:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-command-client")
 }
 ```
 

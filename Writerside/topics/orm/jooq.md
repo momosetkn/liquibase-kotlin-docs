@@ -7,7 +7,7 @@ Add bellow code your build.gradle.kts
 
 ```kotlin
 dependencies {
-    implementation("io.github.momosetkn:liquibase-kotlin-custom-jooq-change:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-custom-jooq-change")
 }
 ```
 

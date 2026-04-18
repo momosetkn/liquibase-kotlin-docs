@@ -8,7 +8,7 @@ Add bellow code your build.gradle.kts
 ```kotlin
 dependencies {
     // liquibase-kotlin
-    implementation("io.github.momosetkn:liquibase-kotlin-custom-komapper-jdbc-change:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-custom-komapper-jdbc-change")
 }
 ```
 

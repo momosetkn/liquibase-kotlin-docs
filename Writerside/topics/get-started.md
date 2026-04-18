@@ -6,15 +6,22 @@ This explains how-to migration by liquibase with Kotlin-DSL here.
 
 Update your build.gradle.kts.
 
+The easiest way to manage liquibase-kotlin dependencies is using the BOM (Bill of Materials).
+This ensures all liquibase-kotlin artifacts use compatible versions.
+
+Update your build.gradle.kts:
+
 <tabs>
 <tab title="Compiled Kotlin">
 
 ```kotlin
 dependencies {
-    // liquibase
-    implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
-    // liquibase-kotlin
-    implementation("io.github.momosetkn:liquibase-kotlin-starter-compiled:%liquibaseKotlinVersion%")
+    // Import BOM to manage versions
+    implementation(platform("io.github.momosetkn:liquibase-kotlin-bom:%liquibaseKotlinVersion%"))
+    
+    // Add dependencies without version numbers - BOM manages them
+    implementation("org.liquibase:liquibase-core")
+    implementation("io.github.momosetkn:liquibase-kotlin-starter-compiled")
 }
 ```
 
@@ -23,10 +30,12 @@ dependencies {
 
 ```kotlin
 dependencies {
-    // liquibase
-    implementation("org.liquibase:liquibase-core:%liquibaseVersion%")
-    // liquibase-kotlin
-    implementation("io.github.momosetkn:liquibase-kotlin-starter-script:%liquibaseKotlinVersion%")
+    // Import BOM to manage versions
+    implementation(platform("io.github.momosetkn:liquibase-kotlin-bom:%liquibaseKotlinVersion%"))
+    
+    // Add dependencies without version numbers - BOM manages them
+    implementation("org.liquibase:liquibase-core")
+    implementation("io.github.momosetkn:liquibase-kotlin-starter-script")
 }
 ```
 </tab>

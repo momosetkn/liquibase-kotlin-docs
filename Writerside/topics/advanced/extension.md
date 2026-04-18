@@ -10,7 +10,7 @@ Add the below dependency to your build.gradle.kts.
 
 ```kotlin
 dependencies {
-    implementation("io.github.momosetkn:liquibase-kotlin-extension:%liquibaseKotlinVersion%")
+    implementation("io.github.momosetkn:liquibase-kotlin-extension")
 }
 ```
 

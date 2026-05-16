@@ -1,5 +1,9 @@
 # Client
 
+<web-summary>
+Learn how to use the Liquibase Kotlin client to configure a database, load changelogs, and run migrations from Kotlin code.
+</web-summary>
+
 This explains how to use the liquibase client.
 It is a client implemented in Kotlin, it is easy to use.
 
@@ -136,4 +140,3 @@ fun main() {
     )
 }
 ```
-

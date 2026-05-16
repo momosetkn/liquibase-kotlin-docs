@@ -1,5 +1,9 @@
 # Detailed configure
 
+<web-summary>
+Configure Liquibase Kotlin script parsing in detail, including how to exclude the global script parser extension module.
+</web-summary>
+
 ## Kotlin-script
 
 `kotlin-script-parser` module was Used global package function for IDE(IntelliJ IDEA) complement.

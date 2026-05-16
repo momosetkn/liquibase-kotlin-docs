@@ -1,5 +1,9 @@
 # Advanced Topics
 
+<web-summary>
+Explore advanced Liquibase Kotlin topics including script configuration, extensions, parser customization, and DataSource-based custom changes.
+</web-summary>
+
 This section covers advanced configuration and extension topics for Liquibase Kotlin DSL.
 
 ## Overview

@@ -1,5 +1,9 @@
 # Extend script-parser
 
+<web-summary>
+Extend the Liquibase Kotlin script parser by registering custom default imports through Java ServiceLoader integration.
+</web-summary>
+
 ## Add default-import
 
 default-imports is using `java.util.ServiceLoader`.

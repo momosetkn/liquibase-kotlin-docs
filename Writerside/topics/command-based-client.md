@@ -1,5 +1,9 @@
 # Command-based client
 
+<web-summary>
+Use the Liquibase Kotlin command-based client to run Liquibase operations from Kotlin with typed configuration instead of the CLI.
+</web-summary>
+
 This explains how to use the liquibase command-based client.
 This is something that has been replaced with a method from what was provided by the official Liquibase in the command line.
 

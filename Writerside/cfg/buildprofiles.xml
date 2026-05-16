@@ -3,8 +3,14 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <web-root>https://momosetkn.github.io/liquibase-kotlin-docs/</web-root>
+        <product-web-url>https://momosetkn.github.io/liquibase-kotlin-docs/</product-web-url>
+        <generate-canonicals>true</generate-canonicals>
+    </variables>
     <build-profile instance="lk">
+        <sitemap priority="0.8" change-frequency="weekly"/>
+        <llms-txt single-file="true"/>
         <variables>
             <noindex-content>false</noindex-content>
         </variables>

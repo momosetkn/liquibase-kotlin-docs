@@ -1,5 +1,9 @@
 # Use javax.sql.DataSource
 
+<web-summary>
+Create Liquibase Kotlin custom changes that transform a Liquibase database into a javax.sql.DataSource-backed application database.
+</web-summary>
+
 How to create a CustomTaskChange with javax.sql.DataSource integration using Liquibase Kotlin DSL for custom execute and rollback operations.
 
 ```kotlin
@@ -60,4 +64,3 @@ changeSet(author = "user", id = "20241016-1000-10") {
     )
 }
 ```
-

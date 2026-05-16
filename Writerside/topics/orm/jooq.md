@@ -1,5 +1,9 @@
 # jOOQ
 
+<web-summary>
+Use Liquibase Kotlin with jOOQ to execute custom SQL migration logic and rollbacks through DSLContext callbacks.
+</web-summary>
+
 
 ## Install
 

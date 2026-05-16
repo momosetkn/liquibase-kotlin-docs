@@ -1,5 +1,9 @@
 # Komapper-jdbc
 
+<web-summary>
+Use Liquibase Kotlin with Komapper JDBC to implement custom migration logic and rollback handling through JdbcDatabase callbacks.
+</web-summary>
+
 
 ## Install
 

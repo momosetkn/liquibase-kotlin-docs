@@ -1,5 +1,9 @@
 # Get started
 
+<web-summary>
+Get started with Liquibase Kotlin by installing the BOM and starter dependencies for compiled Kotlin or Kotlin script migrations.
+</web-summary>
+
 This explains how-to migration by liquibase with Kotlin-DSL here.
 
 ## Let's install

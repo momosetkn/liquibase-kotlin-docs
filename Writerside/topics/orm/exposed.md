@@ -1,5 +1,9 @@
 # Exposed-migration
 
+<web-summary>
+Use Liquibase Kotlin with JetBrains Exposed to run schema and data migrations through custom Exposed-based changesets.
+</web-summary>
+
 
 ## Install
 

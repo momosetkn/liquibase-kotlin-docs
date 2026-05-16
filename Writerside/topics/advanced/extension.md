@@ -1,5 +1,9 @@
 # Extension
 
+<web-summary>
+Extend Liquibase Kotlin with SlowLogChangeExecListener to detect and log slow-running changesets in Kotlin applications.
+</web-summary>
+
 ## SlowLogChangeExecListener
 
 Issuing a WARN log if ChangeSet is slow. With use slf4j.
